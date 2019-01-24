@@ -1,0 +1,42 @@
+
+p {
+	color: #000000;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-family: arial;
+	text-align: center;
+}
+body { 
+	background-image: url('../images/wave.gif'); 
+	background-repeat: repeat;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.spinning {
+	font-size: 30px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+		  transition:         transform .8s ease-in-out;
+	-webkit-animation: spin 4s infinite linear;
+}
+.title {
+	font-size: 200px;
+	text-align: center;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition:         transform .8s ease-in-out;
+	-webkit-animation: shrink 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes spin {
+	0%  {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}   
+}
+
+@-webkit-keyframes shrink {
+
+	0%  {-webkit-transform: rotate(0deg);}
+	25% {-webkit-transform: rotate(15deg);}  
+	50%  {-webkit-transform: rotate(0deg);}
+	75%  {-webkit-transform: rotate(-15deg);}
+	100%  {-webkit-transform: rotate(0deg);}
+}
