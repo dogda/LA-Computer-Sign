@@ -1,5 +1,5 @@
 var current = "wave";
-var styleArray = ["matrix", "wave", "clouds", "none"];
+var styleArray = ["matrix", "wave", "clouds"];
 
 $(document).ready(function(){
 
@@ -8,14 +8,7 @@ $(document).ready(function(){
 		$(".signStyle").remove();
 		$("head").append($sheet);
 	}
-	
-	$(document).keypress(function(event){ 
-		var key = (event.keyCode ? event.keyCode : event.which); 
-		if( key == "32"){
-			cycleStyle();
-		}  
-	});
-	
+
 	var cycleStyle = function(){
 		var index = styleArray.findIndex(function(e){
 			return e == current;
@@ -24,10 +17,29 @@ $(document).ready(function(){
 		console.log(index);
 		current = styleArray[newIndex];
 		changeStyle(current);
-		
-		
+
+
 	};
-	
+
+	$("#optionsMenuToggle").click( function(){
+		$("#optionsMenuMain").toggle();
+	})
+
+	$("#changeTitleButton").click( function(){
+		console.log("Test");
+		changeTitle($("input").val());
+	})
+
+	$("#cycleStyle").click(function(){
+		console.log("Test");
+		cycleStyle();
+	});
+
+	var changeTitle = function(title){
+		console.log(title);
+		$("#title").text(title);
+	}
+
 	cycleStyle();
 
 });

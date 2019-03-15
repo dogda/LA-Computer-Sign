@@ -1,0 +1,29 @@
+#optionsMenuToggle {
+}
+
+#optionsMenuMain {
+  display: hidden;
+}
+
+#optionsMenu {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#cycleStyle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.optionsDiv {
+  background: white;
+  border: 3px solid gray;
+  border-radius: 3px;
+}
+
+.optionsDiv, p {
+  color: black;
+  padding: 5px;
+}

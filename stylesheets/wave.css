@@ -1,5 +1,15 @@
 
 p {
+}
+body {
+	background-image: url('../images/wave.gif');
+	background-repeat: repeat;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.styleText {
 	color: white;
 	font-family: arial;
 	text-align: center;
@@ -8,21 +18,13 @@ p {
 	border: 20px solid white;
 	border-radius: 20px;
 }
-body { 
-	background-image: url('../images/wave.gif'); 
-	background-repeat: repeat;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
 .spinning {
 	font-size: 30px;
   -webkit-transition: -webkit-transform .8s ease-in-out;
 		  transition:         transform .8s ease-in-out;
 	-webkit-animation: wiggle 4s infinite linear;
 }
-.title {
+#title {
 	font-size: 200px;
 	text-align: center;
 	-webkit-transition: -webkit-transform .8s ease-in-out;
@@ -33,13 +35,13 @@ body {
 
 @-webkit-keyframes spin {
 	0%  {-webkit-transform: rotate(0deg);}
-	100% {-webkit-transform: rotate(360deg);}   
+	100% {-webkit-transform: rotate(360deg);}
 }
 
 @-webkit-keyframes wiggle {
 
 	0%  {-webkit-transform: rotate(0deg);}
-	25% {-webkit-transform: rotate(15deg);}  
+	25% {-webkit-transform: rotate(15deg);}
 	50%  {-webkit-transform: rotate(0deg);}
 	75%  {-webkit-transform: rotate(-15deg);}
 	100%  {-webkit-transform: rotate(0deg);}

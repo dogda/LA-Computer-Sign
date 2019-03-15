@@ -4,19 +4,22 @@
   src: url(../fonts/vt323-v10-latin-regular.woff);
 }
 p {
-	color: #00FF00;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	font-family: vt323;
-	text-align: center;
+
 }
 body {
-	background-color: black;  
-	background-image: url('../images/matrix.gif'); 
+	background-color: black;
+	background-image: url('../images/matrix.gif');
 	background-repeat: repeat;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+.styleText {
+  color: #00FF00;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: vt323;
+	text-align: center;
 }
 .spinning {
 	font-size: 50px;
@@ -24,7 +27,7 @@ body {
 		  transition:         transform .8s ease-in-out;
 	-webkit-animation: spin 4s infinite linear;
 }
-.title {
+#title {
 	font-size: 320px;
 	text-align: center;
 	-webkit-transition: -webkit-transform .8s ease-in-out;
@@ -34,11 +37,11 @@ body {
 
 @-webkit-keyframes spin {
 	0%  {-webkit-transform: rotate(0deg);}
-	100% {-webkit-transform: rotate(360deg);}   
+	100% {-webkit-transform: rotate(360deg);}
 }
 
 @-webkit-keyframes shrink {
 	0%  {-webkit-transform: scale(1,1);}
-	50% {-webkit-transform: scale(.8,.8);}  
+	50% {-webkit-transform: scale(.8,.8);}
 	100%  {-webkit-transform: scale(1,1);}
 }

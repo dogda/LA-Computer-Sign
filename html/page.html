@@ -2,36 +2,40 @@
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="../javascript/controller.js"></script>
-		
+		<link id="globalStyle" rel="stylesheet" href="../stylesheets/global.css">
 		<style>
-		
+
 		#styleSelectors{
 			position: absolute;
 			bottom: 10px;
 		}
-		
+
 		</style>
 	</head>
 	<body>
 		<div>
-			<p class="spinning">Learning Assistant</p>
-			<p class="spinning">Kaleb Gaar</p>
-			<p class="spinning">Learning Assistant</p>
+			<p class="spinning styleText">Learning Assistant</p>
+			<p class="spinning styleText">Kaleb Gaar</p>
+			<p class="spinning styleText">Learning Assistant</p>
 		</div>
-		<p id="title">CSCE 156</p>
+		<p id="title" class="styleText">CSCE 156</p>
 		<div>
-			<p class="spinning">Learning Assistant</p>
-			<p class="spinning">Kaleb Gaar</p>
-			<p class="spinning">Learning Assistant</p>
+			<p class="spinning styleText">Learning Assistant</p>
+			<p class="spinning styleText">Kaleb Gaar</p>
+			<p class="spinning styleText">Learning Assistant</p>
 		</div>
-		
-		<div>
-			<div>
-				<p> show options </p>
+
+		<div id="optionsMenu">
+			<div id="optionsMenuToggle" class="optionsDiv">
+				<p id="optionsMenuToggleText"> show options </p>
 			</div>
-			<div>
-				
+			<div id="optionsMenuMain" class="optionsDiv">
+				<p> Title: <input type="text" name="lname" id="changeTitleInput"> <button id="changeTitleButton">Set</button></p><br>
 			</div>
+		</div>
+
+		<div id="cycleStyle" class="optionsDiv">
+			<p>Next Style</p>
 		</div>
 	</body>
 </html>

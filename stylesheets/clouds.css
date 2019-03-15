@@ -1,16 +1,9 @@
 
 p {
-	color: white;
-	font-family: arial;
-	text-align: center;
-	background-image: url('../images/marioBrick.png'); 
-	background-repeat: repeat;
-	  background-size: 50px;
-	background-color: #2C5784;
-	padding: 30px;
+
 }
-body { 
-	background-image: url('../images/clouds.gif'); 
+body {
+	background-image: url('../images/clouds.gif');
 	background-repeat: repeat;
 	background-color: lightskyblue;
 	display: flex;
@@ -18,24 +11,34 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+.styleText {
+	color: white;
+	font-family: arial;
+	text-align: center;
+	padding: 30px;
+}
 .spinning {
 	display: none;
 }
-.title {
+#title {
 	font-size: 200px;
 	text-align: center;
 	-webkit-transition: -webkit-transform .8s ease-in-out;
 	transition:         transform .8s ease-in-out;
 	-webkit-animation: wiggle 2s infinite ease-in-out;
-	
+
 	-webkit-animation: jello-horizontal 1.5s infinite both;
 	        animation: jello-horizontal 1.5s infinite both;
+	background-image: url('../images/marioBrick.png');
+	background-repeat: repeat;
+		background-size: 50px;
+	background-color: #2C5784;
 }
 
 @-webkit-keyframes wiggle {
 
 	0%  {-webkit-transform: rotate(0deg);}
-	25% {-webkit-transform: rotate(15deg);}  
+	25% {-webkit-transform: rotate(15deg);}
 	50%  {-webkit-transform: rotate(0deg);}
 	75%  {-webkit-transform: rotate(-15deg);}
 	100%  {-webkit-transform: rotate(0deg);}
