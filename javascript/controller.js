@@ -1,5 +1,5 @@
 var current = "wave";
-var styleArray = ["matrix", "wave"];
+var styleArray = ["matrix", "wave", "clouds", "none"];
 
 $(document).ready(function(){
 
