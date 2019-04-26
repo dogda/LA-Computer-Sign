@@ -1,4 +1,4 @@
-var current = "wave";
+var current = "clouds";
 var styleArray = ["matrix", "wave", "clouds"];
 
 $(document).ready(function(){
@@ -25,6 +25,8 @@ $(document).ready(function(){
 		$("#optionsMenuMain").toggle();
 	})
 
+
+
 	$("#changeTitleButton").click( function(){
 		console.log("Test");
 		changeTitle($("input").val());
@@ -40,6 +42,7 @@ $(document).ready(function(){
 		$("#title").text(title);
 	}
 
-	cycleStyle();
+  changeStyle(current);
+	$("#optionsMenuMain").toggle();
 
 });
