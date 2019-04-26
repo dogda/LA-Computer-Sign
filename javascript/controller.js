@@ -1,4 +1,4 @@
-var current = "clouds";
+var current = "matrix";
 var styleArray = ["matrix", "wave", "clouds"];
 
 $(document).ready(function(){
@@ -42,6 +42,7 @@ $(document).ready(function(){
 		$("#title").text(title);
 	}
 
+	// Initialize style
   changeStyle(current);
 	$("#optionsMenuMain").toggle();
 
